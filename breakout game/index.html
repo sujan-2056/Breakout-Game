@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breakout-Game</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .yous {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10px;
+        width: 15px;
+        border: 2px solid black;
+      }
+      #sound_on {
+        height: 35px;
+        width: 35px;
+        top: 570px;
+        left: 573px;
+        position: absolute;
+        cursor: pointer;
+      }
+      #imggame {
+        display: none;
+        position: absolute;
+        height: 600px;
+        width: 400px;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      #gameover {
+        display: none;
+        position: absolute;
+        width: 400px;
+        top: 90px;
+      }
+
+      #gamewin {
+        display: none;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top: 140px;
+        left: 100px;
+      }
+
+      #playagain {
+        position: absolute;
+        top: 375px;
+        left: 155px;
+        /* border: 1px solid black; */
+        cursor: pointer;
+        padding: 2px 4px;
+        color: wheat;
+        font-weight: 600;
+        /* display: none; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="imggame">
+      <img src="./gameover.png" alt="gameover" id="gameover" />
+      <img src="./youwon.png" alt="wingame" id="gamewin" />
+      <div id="playagain">Play Again</div>
+    </div>
+    <div class="sound">
+      <img src="./SOUND_ON.png" id="sound_on" />
+    </div>
+    <canvas id="breakout" width="400" height="600"></canvas>
+    <script src="./script.js"></script>
+  </body>
+</html>
